@@ -17,7 +17,6 @@ body {
     font: 14px/24px Arial, Tahoma, sans-serif;
     font-family: sans-serif;
     margin-left: 70px;
-    margin-right: 70px;
     margin-top: 30px;
 }
 h3 {
@@ -27,9 +26,7 @@ p {
     color: rgb(83, 83, 83);
 }
 .field {
-    float: left;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .field1 {
     clear: left;
@@ -40,20 +37,26 @@ p {
     border-radius: 2px;
     border: 0.5px solid rgb(191, 191, 191);
     height: 30px;
-    width: 195px;
+    width: 275px;
     margin-right: 12px;
 }
-.box1 {
+.box2 {
+    margin-left: 70px;
+    visibility: visible;
     border-radius: 2px;
     border: none;
     background: rgb(200, 31, 63);
     height: 34px;
-    width: 100px;
+    width: 130px;
     color: white;
 }
 .box1:hover {
     background: rgb(160, 25, 50);
 }
+.box2:hover {
+    background: rgb(160, 25, 50);
+}
+
 
 
 input[type=checkbox] {
@@ -63,7 +66,6 @@ input[type=checkbox] {
   -o-transform: scale(1.5); 
   padding: 7px;
 }
-
 .check { 
   margin-top: 10px;
 }
@@ -73,3 +75,44 @@ a {
     color: rgb(200, 31, 63);
 }
 
+
+
+@media screen and (max-width:991px) {
+body {
+    width: 280px;
+}
+.forgot {
+    margin-left: 30px;
+}
+.box1 {
+    display: none;
+}
+}
+@media screen and (min-width:992px) {
+.field {
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.box {
+    padding-left: 7px;
+    border-radius: 2px;
+    border: 0.5px solid rgb(191, 191, 191);
+    height: 30px;
+    width: 195px;
+    margin-right: 12px;
+}
+.box1 {
+    visibility: visible;
+    border-radius: 2px;
+    border: none;
+    background: rgb(200, 31, 63);
+    height: 34px;
+    width: 100px;
+    color: white;
+}
+.box2 {
+    visibility: hidden;
+}
+
+}
